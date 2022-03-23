@@ -7,7 +7,7 @@ __copyright__ = "Copyright (c) Charlie Powell 2020-2021 - released under the ter
 
 import re
 
-import rpi_ws281x
+import rpi_ws281x_3bp_spi1
 
 # noinspection PyPackageRequirements
 from octoprint.events import Events
@@ -77,21 +77,21 @@ SUPPORTED_EVENTS = {
 
 
 STRIP_TYPES = {
-    "WS2811_STRIP_GRB": rpi_ws281x.WS2811_STRIP_GRB,
-    "WS2812_STRIP": rpi_ws281x.WS2812_STRIP,
-    "WS2811_STRIP_RGB": rpi_ws281x.WS2811_STRIP_RGB,
-    "WS2811_STRIP_RBG": rpi_ws281x.WS2811_STRIP_RBG,
-    "WS2811_STRIP_GBR": rpi_ws281x.WS2811_STRIP_GBR,
-    "WS2811_STRIP_BGR": rpi_ws281x.WS2811_STRIP_BGR,
-    "WS2811_STRIP_BRG": rpi_ws281x.WS2811_STRIP_BRG,
-    "SK6812_STRIP": rpi_ws281x.SK6812_STRIP,
-    "SK6812W_STRIP": rpi_ws281x.SK6812W_STRIP,
-    "SK6812_STRIP_RGBW": rpi_ws281x.SK6812_STRIP_RGBW,
-    "SK6812_STRIP_RBGW": rpi_ws281x.SK6812_STRIP_RBGW,
-    "SK6812_STRIP_GRBW": rpi_ws281x.SK6812_STRIP_GRBW,
-    "SK6812_STRIP_GBRW": rpi_ws281x.SK6812_STRIP_GBRW,
-    "SK6812_STRIP_BRGW": rpi_ws281x.SK6812_STRIP_BRGW,
-    "SK6812_STRIP_BGRW": rpi_ws281x.SK6812_STRIP_BGRW,
+    "WS2811_STRIP_GRB": rpi_ws281x_3bp_spi1.WS2811_STRIP_GRB,
+    "WS2812_STRIP": rpi_ws281x_3bp_spi1.WS2812_STRIP,
+    "WS2811_STRIP_RGB": rpi_ws281x_3bp_spi1.WS2811_STRIP_RGB,
+    "WS2811_STRIP_RBG": rpi_ws281x_3bp_spi1.WS2811_STRIP_RBG,
+    "WS2811_STRIP_GBR": rpi_ws281x_3bp_spi1.WS2811_STRIP_GBR,
+    "WS2811_STRIP_BGR": rpi_ws281x_3bp_spi1.WS2811_STRIP_BGR,
+    "WS2811_STRIP_BRG": rpi_ws281x_3bp_spi1.WS2811_STRIP_BRG,
+    "SK6812_STRIP": rpi_ws281x_3bp_spi1.SK6812_STRIP,
+    "SK6812W_STRIP": rpi_ws281x_3bp_spi1.SK6812W_STRIP,
+    "SK6812_STRIP_RGBW": rpi_ws281x_3bp_spi1.SK6812_STRIP_RGBW,
+    "SK6812_STRIP_RBGW": rpi_ws281x_3bp_spi1.SK6812_STRIP_RBGW,
+    "SK6812_STRIP_GRBW": rpi_ws281x_3bp_spi1.SK6812_STRIP_GRBW,
+    "SK6812_STRIP_GBRW": rpi_ws281x_3bp_spi1.SK6812_STRIP_GBRW,
+    "SK6812_STRIP_BRGW": rpi_ws281x_3bp_spi1.SK6812_STRIP_BRGW,
+    "SK6812_STRIP_BGRW": rpi_ws281x_3bp_spi1.SK6812_STRIP_BGRW,
 }
 EFFECTS = {
     "Solid Color": standard.solid_color,
