@@ -781,12 +781,12 @@ class WS281xLedStatusPlugin(
                 ],
                 "current": self._plugin_version,
                 # update method: pip
-                "pip": "https://github.com/cp2004/OctoPrint-WS281x_LED_Status/archive/{target_version}.zip",
+                "pip": "https://github.com/P13R3/OctoPrint-WS281x_LED_Status/archive/{target_version}.zip",
             }
         }
 
 
-__plugin_name__ = "WS281x LED Status"
+__plugin_name__ = "WS281x LED Status (SPI1 fork)"
 __plugin_pythoncompat__ = ">=2.7,<4"  # python 2 and 3
 __plugin_version__ = __version__
 __plugin_implementation__ = None
